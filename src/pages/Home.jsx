@@ -182,7 +182,7 @@ const Home = () => {
             ) : (
               data
                 .filter((response) => {
-                  if (searchTitle && searchLocation && searchType === "") {
+                  if (searchTitle === "") {
                     return response;
                   } else if (
                     response.title
